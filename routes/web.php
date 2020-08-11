@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('landing');
+});
+
+Route::get('/shop', function() {
+	return view('shop');
 });

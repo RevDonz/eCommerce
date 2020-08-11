@@ -12,7 +12,7 @@
 */
 
 Route::get('/home', function () {
-    return view('landing');
+    return view('home');
 });
 
 Route::get('/shop', function() {

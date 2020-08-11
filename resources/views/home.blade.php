@@ -1,5 +1,7 @@
 @extends('landing')
 
+@section('title', 'Home')
+
 @section('content')
     <!-- Categories Section Begin -->
     <section class="categories">

@@ -11,22 +11,22 @@
 |
 */
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/', function () {
+    return view('landing.home');
 });
 
 Route::get('/shop', function() {
-	return view('shop');
+	return view('landing.shop');
 });
 
 Route::get('/login', function() {
-	return view('login');
+	return view('authentication.login');
 });
 
 Route::get('/register', function() {
-	return view('register');
+	return view('authentication.register');
 });
 
-Route::get('/admin', function() {
+Route::get('/dashboard', function() {
 	return view('admin.index');
 });

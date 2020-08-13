@@ -1,4 +1,4 @@
-<section class="hero {{ (request()->segment(1) !== 'home') ? 'hero-normal' : '' }}">
+<section class="hero {{ (request()->segment(1) == '') ? '' : 'hero-normal' }}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                    @if(request()->segment(1) == 'home')
+                    @if(request()->segment(1) == '')
                         <div class="hero__item set-bg" data-setbg="{{ asset('ogani/img/hero/banner.jpg') }}">
                             <div class="hero__text">
                                 <span>FRUIT FRESH</span>

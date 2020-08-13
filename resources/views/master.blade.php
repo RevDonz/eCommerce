@@ -26,22 +26,22 @@
 <body>
 
     <!-- Humberger Begin -->
-    @include('templates.humberger')
+    @include('layout.humberger')
     <!-- Humberger End -->
 
     <!-- Header Section Begin -->
-    @include('templates.header')
+    @include('layout.header')
     <!-- Header Section End -->
 
     <!-- Hero Section Begin / Navbar -->
-    @include('templates.navbar')
+    @include('layout.navbar')
     <!-- Hero Section End -->
 
     {{-- content --}}
     @yield('content')
 
     <!-- Footer Section Begin -->
-    @include('templates.footer')
+    @include('layout.footer')
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->

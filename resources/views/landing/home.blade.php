@@ -1,4 +1,4 @@
-@extends('landing')
+@extends('master')
 
 @section('title', 'Home')
 
